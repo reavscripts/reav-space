@@ -171,8 +171,8 @@ header {
 }
 
 .tool-icon {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     margin-bottom: var(--spacing-unit);
     /* border-radius: 50%; /* Rimuovi o commenta questa riga per avere forme rettangolari */
