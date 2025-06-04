@@ -175,7 +175,7 @@ header {
     height: 80px;
     object-fit: contain;
     margin-bottom: var(--spacing-unit);
-    border-radius: 50%; /* Se vuoi icone rotonde */
+    /* border-radius: 50%; /* Rimuovi o commenta questa riga per avere forme rettangolari */
     background-color: var(--light-bg); /* Sfondo per l'icona */
     padding: 10px;
 }
