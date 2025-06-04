@@ -11,7 +11,7 @@
       "headers": [
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "https://*.reav.space" // <--- CAMBIO QUI!
+          "value": "*" // <-- CAMBIO QUI per TESTARE!
         },
         {
           "key": "Access-Control-Allow-Methods",
