@@ -1,0 +1,258 @@
+/* Importa font da Google Fonts (se usati) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400&display=swap');
+
+/* --- Reset e Stili Base --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #007bff; /* Blu accattivante */
+    --secondary-color: #6c757d; /* Grigio secondario */
+    --accent-color: #28a745; /* Verde per pulsanti di azione */
+    --text-color: #343a40; /* Grigio scuro per il testo */
+    --light-bg: #f8f9fa; /* Sfondo chiaro */
+    --dark-bg: #343a40; /* Sfondo scuro (per footer/CTA) */
+    --white: #ffffff;
+    --border-color: #dee2e6;
+    --spacing-unit: 1.5rem; /* Unità di spaziatura base */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--white);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-unit);
+}
+
+.section-padded {
+    padding: calc(var(--spacing-unit) * 3) 0;
+}
+
+/* Colori di sfondo */
+.bg-light {
+    background-color: var(--light-bg);
+}
+
+.bg-dark {
+    background-color: var(--dark-bg);
+    color: var(--white); /* Per il testo su sfondo scuro */
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* --- Tipografia --- */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: var(--spacing-unit);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.bg-dark h2 {
+    color: var(--white);
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: calc(var(--spacing-unit) / 2);
+}
+
+p {
+    margin-bottom: var(--spacing-unit);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3; /* Tonalità più scura per hover */
+}
+
+/* --- Header --- */
+header {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    text-align: center;
+    padding: calc(var(--spacing-unit) * 4) 0 calc(var(--spacing-unit) * 2) 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.site-title {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    color: var(--white); /* Titolo bianco sull'header scuro */
+}
+
+.tagline {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* --- Pulsanti --- */
+.button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #218838; /* Tonalità più scura di verde */
+    transform: translateY(-2px);
+}
+
+.button-white {
+    background-color: var(--white);
+    color: var(--dark-bg);
+    border: 1px solid var(--dark-bg);
+}
+
+.button-white:hover {
+    background-color: var(--light-bg);
+    color: var(--dark-bg);
+    border-color: var(--secondary-color);
+}
+
+
+/* --- Sezione Tools (Griglia) --- */
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(var(--spacing-unit) * 2);
+    margin-top: calc(var(--spacing-unit) * 2);
+}
+
+.tool-item {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: calc(var(--spacing-unit) * 1.5);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.tool-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: var(--spacing-unit);
+    border-radius: 50%; /* Se vuoi icone rotonde */
+    background-color: var(--light-bg); /* Sfondo per l'icona */
+    padding: 10px;
+}
+
+.tool-item h3 {
+    margin-top: 0;
+    margin-bottom: calc(var(--spacing-unit) / 2);
+    color: var(--text-color);
+}
+
+.tool-item p {
+    font-size: 0.95rem;
+    margin-bottom: var(--spacing-unit);
+    color: var(--secondary-color);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--dark-bg);
+    color: rgba(255, 255, 255, 0.7);
+    padding: var(--spacing-unit);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--white);
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+.social-links {
+    margin-top: calc(var(--spacing-unit) / 2);
+}
+
+/* --- Media Queries (Responsiveness) --- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .site-title {
+        font-size: 3rem;
+    }
+
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    .section-padded {
+        padding: calc(var(--spacing-unit) * 2) 0;
+    }
+
+    .tool-grid {
+        grid-template-columns: 1fr; /* Una colonna su schermi piccoli */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .site-title {
+        font-size: 2.5rem;
+    }
+    .tagline {
+        font-size: 1rem;
+    }
+}
