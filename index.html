@@ -1,165 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reav.space - Your Hub for Free Daily Tools & Practical Solutions</title>
-    <meta name="description" content="reav.space offers a suite of free, intuitive online tools designed to simplify your everyday life. Discover practical solutions for common tasks and optimize your time.">
-    <meta name="keywords" content="reav.space, free online tools, daily tools, practical solutions, life hacks, productivity tools, web apps, useful utilities">
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>reav.space — Free Daily Tools</title>
+  <meta name="description" content="reav.space offers a suite of free, intuitive online tools designed to simplify your everyday life." />
+  <meta name="keywords" content="reav.space, free online tools, daily tools, productivity tools, web apps, utilities" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1 class="site-title">reav.space</h1>
-            <p class="tagline">Your go-to place for digital tools that simplify everyday life.</p>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="reav.space home">
+        <span class="brand-dot"></span>
+        <span class="brand-text">reav.space</span>
+      </a>
+
+      <nav class="nav">
+        <a class="nav-link" href="#tools">Tools</a>
+        <a class="nav-link" href="#cta">Get started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="badge">Free • Fast • Privacy‑friendly</p>
+          <h1 class="hero-title">Your hub for modern, free daily tools.</h1>
+          <p class="hero-subtitle">
+            Clean utilities that solve everyday tasks in seconds — no clutter, no nonsense.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#tools">Explore tools</a>
+            <a class="btn btn-ghost" href="https://url-shortner.reav.space/" target="_blank" rel="noreferrer">Try URL shortener</a>
+          </div>
+
+          <div class="hero-metrics" aria-label="Highlights">
+            <div class="metric">
+              <div class="metric-value">Instant</div>
+              <div class="metric-label">Results</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">Modern</div>
+              <div class="metric-label">UI</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value">Free</div>
+              <div class="metric-label">Forever</div>
+            </div>
+          </div>
         </div>
-    </header>
 
-    <main>
-        <section id="intro" class="section-padded bg-light">
-            <div class="container">
-                <h2>Welcome to the Future of Simplicity with reav.space</h2>
-                <p>At reav.space, we believe that technology should make life easier, not more complicated. That's why we've created a suite of intuitive and **free online tools**, designed to solve the small and large problems of everyday life. Our mission is to provide **practical solutions** and **useful utilities** to help you **optimize time and energy**.</p>
-                <p>Explore our diverse range of solutions and discover how our tools can make your daily routines more efficient.</p>
-            </div>
-        </section>
+        <div class="hero-panel" aria-label="Tool search">
+          <div class="panel-header">
+            <h2 class="panel-title">Find a tool</h2>
+            <p class="panel-subtitle">Search by name or keyword.</p>
+          </div>
 
-        <section id="tools" class="section-padded">
-            <div class="container">
-                <h2>Explore Our Collection of Free Daily Tools</h2>
-                <div class="tool-grid">
-					<div class="tool-item">
-						<img src="/images/recipegenerator.png" alt="Recipe Generator Icon" class="tool-icon"> 
-						<h3>Recipe Generator</h3>
-						<p>Generate new meal ideas for lunch, dinner, or snacks with dietary and meal type filters from a vast recipe database.</p>
-						<a href="https://recipe-generator.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-					<div class="tool-item">
-						<img src="/images/urlshortner.png" alt="URL Shortener Icon" class="tool-icon"> 
-						<h3>Free Online URL Shortener & Link Shortener</h3>
-						<p>Simplify your links and optimize your online presence with reav.space's powerful and free URL shortener tool.</p>
-						<a href="https://url-shortner.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-					<div class="tool-item">
-						<img src="/images/pdftoimage.png" alt="PDF to Image Converter Icon" class="tool-icon"> 
-						<h3>PDF to Image Converter</h3>
-						<p>Convert PDF documents to images (JPG, PNG, WebP) directly in your browser. Fast, free, and private.</p>
-						<a href="https://pdfimageconverter.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-					<div class="tool-item">
-                        <img src="/images/resizecompress.png" alt="Image Resizer Icon" class="tool-icon">
-                        <h3>Image Resizer & Compressor</h3>
-                        <p>Quickly resize, compress, and convert images for web, social media, or email. Optimize file sizes without compromising quality.</p>
-                        <a href="https://compress.reav.space/" target="_blank" class="button">Access the Tool</a>
-                    </div>
-                    <div class="tool-item">
-						<img src="/images/imageconverter.png" alt="Image Converter Icon" class="tool-icon"> 
-						<h3>Image Converter</h3>
-						<p>Easily convert your images between popular formats like JPG, PNG, and WebP directly in your browser, ensuring privacy and speed.</p>
-						<a href="https://image-converter.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-					<div class="tool-item">
-						<img src="/images/markdowntohtml.png" alt="Markdown to HTML Converter Icon" class="tool-icon"> 
-						<h3>Markdown to HTML Converter</h3>
-						<p>Convert your Markdown text to HTML instantly with a real-time preview. Perfect for developers, writers, and content creators.</p>
-						<a href="https://markdowntohtml.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-					<div class="tool-item">
-						<img src="/images/qrcodegenerator.png" alt="QR Code Generator Icon" class="tool-icon"> 
-						<h3>QR Code Generator</h3>
-						<p>Generate custom QR codes instantly from any text or URL. Perfect for sharing links, contact info, and more.</p>
-						<a href="https://qrcode-generator.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-					<div class="tool-item">
-						<img src="/images/colorconverter.png" alt="Color Converter Icon" class="tool-icon"> 
-						<h3>Color Converter (Hex, RGB, HSL)</h3>
-						<p>Convert colors between Hex, RGB, and HSL formats instantly with a visual color picker. Essential for design and development.</p>
-						<a href="https://color-converter.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-					<div class="tool-item">
-						<img src="/images/textcaseconverter.png" alt="Text Case Converter Icon" class="tool-icon"> 
-						<h3>Text Case Converter</h3>
-						<p>Convert text to various casing styles (Uppercase, Lowercase, Title Case, etc.) instantly. Ideal for writers, developers, and content creators.</p>
-						<a href="https://textcaseconverter.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-					<div class="tool-item">
-						<img src="/images/linesorterdeduplicator.png" alt="Line Sorter & Deduplicator Icon" class="tool-icon"> 
-						<h3>Line Sorter & Deduplicator</h3>
-						<p>Sort lines alphabetically and remove duplicates from your text instantly. Great for cleaning up lists and data.</p>
-						<a href="https://sorter-deduplicator.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-					<div class="tool-item">
-						<img src="/images/base64.png" alt="Base64 Encoder Decoder Icon" class="tool-icon"> 
-						<h3>Base64 Encoder & Decoder</h3>
-						<p>Encode and decode text to Base64 and vice-versa instantly. Essential for developers and for handling web data efficiently.</p>
-						<a href="https://base64.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-					<div class="tool-item">
-						<img src="/images/loremipsumgenerator.png" alt="Lorem Ipsum Generator Icon" class="tool-icon"> 
-						<h3>Lorem Ipsum Generator</h3>
-						<p>Generate customizable placeholder text (Lorem Ipsum) quickly and easily for your designs and projects. Essential for developers and designers.</p>
-						<a href="https://lorem-ipsum.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-					<div class="tool-item">
-						<img src="/images/roicalculator.png" alt="Advanced ROI Calculator Icon" class="tool-icon"> 
-						<h3>Advanced ROI Calculator</h3>
-						<p>Optimize your financial decisions by calculating the **Return on Investment (ROI)** quickly and accurately. A must-have for investors and business owners.</p>
-						<a href="https://roi.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
+          <div class="search">
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input id="toolSearch" type="search" placeholder="Search tools… (e.g. QR, PDF, convert)" autocomplete="off" />
+            <button id="clearSearch" class="chip" type="button">Clear</button>
+          </div>
 
-					<div class="tool-item">
-						<img src="/images/securepassword.png" alt="Secure Password Generator Icon" class="tool-icon"> 
-						<h3>Secure Password Generator</h3>
-						<p>Enhance your online security. Create **complex and unique passwords** in seconds to better protect your accounts from cyber threats.</p>
-						<a href="https://pass-generator.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-
-					<div class="tool-item">
-						<img src="/images/unitconverter.png" alt="Universal Unit Converter Icon" class="tool-icon"> 
-						<h3>Universal Unit Converter</h3>
-						<p>Simplify conversions for any unit of measure, from temperature to weight, length, and more, with a single click. **Easy and immediate utility**.</p>
-						<a href="https://unit-calculator.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-					<div class="tool-item">
-						<img src="/images/namesgenerator.png" alt="Name Generator Icon" class="tool-icon"> 
-						<h3>Name Generator</h3>
-						<p>Struggling to find the perfect name? Our **Name Generator** helps you discover creative and unique names for various purposes, from characters to businesses.</p>
-						<a href="https://namegenerator.reav.space/" target="_blank" class="button">Access the Tool</a>
-					</div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <section id="cta" class="section-padded bg-dark text-center">
-            <div class="container">
-                <h2>Ready to Simplify Your Life with reav.space?</h2>
-                <p>Dive into our collection of useful web apps and discover how our **free online tools** can make your everyday tasks more efficient and enjoyable.</p>
-                
-                <a href="#tools" class="button button-white">Explore Our Tools Now</a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="current-year"></span> reav.space. All rights reserved.</p>
-            <div class="social-links">
-                
-                <a href="#" target="_blank">Facebook</a>
-                <a href="#" target="_blank">Twitter</a>
-                <a href="#" target="_blank">LinkedIn</a>
-            </div>
+          <div class="panel-hint">
+            Tip: Press <kbd>/</kbd> to focus search.
+          </div>
         </div>
-    </footer>
+      </div>
 
-    <script>
-        // Automatically update the year in the footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Explore our collection</h2>
+          <p class="section-subtitle">
+            Everything here is built to be simple, quick, and satisfying to use.
+          </p>
+        </div>
+
+        <div id="toolGrid" class="tool-grid">
+          <article class="tool-card" data-tags="recipe food generator meal">
+            <img src="/images/recipegenerator.png" alt="Recipe Generator" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>Recipe Generator</h3>
+              <p>Generate meal ideas with dietary and meal type filters from a large recipe database.</p>
+              <a href="https://recipe-generator.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="url shortener link shorten">
+            <img src="/images/urlshortner.png" alt="URL Shortener" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>URL Shortener</h3>
+              <p>Simplify links and share clean short URLs instantly.</p>
+              <a href="https://url-shortner.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="pdf image convert converter">
+            <img src="/images/pdftoimage.png" alt="PDF to Image Converter" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>PDF → Image</h3>
+              <p>Convert PDFs to JPG/PNG/WebP directly in your browser — fast and private.</p>
+              <a href="https://pdfimageconverter.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="resize compress image optimize">
+            <img src="/images/resizecompress.png" alt="Image Resizer & Compressor" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>Resize & Compress</h3>
+              <p>Resize, compress, and convert images for web and socials — without quality loss.</p>
+              <a href="https://compress.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="image convert jpg png webp">
+            <img src="/images/imageconverter.png" alt="Image Converter" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>Image Converter</h3>
+              <p>Convert images between JPG/PNG/WebP in seconds.</p>
+              <a href="https://image-converter.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="markdown html convert preview">
+            <img src="/images/markdowntohtml.png" alt="Markdown to HTML Converter" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>Markdown → HTML</h3>
+              <p>Convert Markdown to HTML instantly with real-time preview.</p>
+              <a href="https://markdowntohtml.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="qr code generator">
+            <img src="/images/qrcodegenerator.png" alt="QR Code Generator" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>QR Code Generator</h3>
+              <p>Generate custom QR codes instantly from text or URLs.</p>
+              <a href="https://qrcode-generator.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="color converter hex rgb hsl">
+            <img src="/images/colorconverter.png" alt="Color Converter" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>Color Converter</h3>
+              <p>Convert colors between Hex, RGB and HSL with a visual picker.</p>
+              <a href="https://color-converter.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="text case converter uppercase lowercase">
+            <img src="/images/textcaseconverter.png" alt="Text Case Converter" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>Text Case Converter</h3>
+              <p>Uppercase, lowercase, title case and more — instantly.</p>
+              <a href="https://textcaseconverter.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="sort deduplicate lines text">
+            <img src="/images/linesorterdeduplicator.png" alt="Line Sorter & Deduplicator" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>Sort & Deduplicate</h3>
+              <p>Sort lines alphabetically and remove duplicates from text.</p>
+              <a href="https://sorter-deduplicator.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="base64 encode decode">
+            <img src="/images/base64.png" alt="Base64 Encoder & Decoder" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>Base64 Encode/Decode</h3>
+              <p>Encode and decode Base64 quickly and safely.</p>
+              <a href="https://base64.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="lorem ipsum generator placeholder">
+            <img src="/images/loremipsumgenerator.png" alt="Lorem Ipsum Generator" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>Lorem Ipsum</h3>
+              <p>Generate placeholder text for designs and prototypes.</p>
+              <a href="https://lorem-ipsum.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="roi calculator finance">
+            <img src="/images/roicalculator.png" alt="Advanced ROI Calculator" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>ROI Calculator</h3>
+              <p>Calculate Return on Investment quickly and accurately.</p>
+              <a href="https://roi.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="password generator security">
+            <img src="/images/securepassword.png" alt="Secure Password Generator" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>Password Generator</h3>
+              <p>Create strong, unique passwords in seconds.</p>
+              <a href="https://pass-generator.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="unit converter calculator">
+            <img src="/images/unitconverter.png" alt="Universal Unit Converter" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>Unit Converter</h3>
+              <p>Convert temperature, weight, length and more — instantly.</p>
+              <a href="https://unit-calculator.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+
+          <article class="tool-card" data-tags="name generator creative">
+            <img src="/images/namesgenerator.png" alt="Name Generator" class="tool-icon" loading="lazy" />
+            <div class="tool-body">
+              <h3>Name Generator</h3>
+              <p>Discover unique names for characters, brands and projects.</p>
+              <a href="https://namegenerator.reav.space/" target="_blank" rel="noreferrer" class="btn btn-card">Open tool</a>
+            </div>
+          </article>
+        </div>
+
+        <div id="noResults" class="no-results hidden">
+          No tools match your search.
+        </div>
+      </div>
+    </section>
+
+    <section id="cta" class="cta">
+      <div class="container cta-inner">
+        <div class="cta-copy">
+          <h2 class="cta-title">Ready to simplify your workflow?</h2>
+          <p class="cta-subtitle">Bookmark reav.space and come back whenever you need a quick utility.</p>
+        </div>
+        <a class="btn btn-primary" href="#tools">Explore tools</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> reav.space. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#tools">Tools</a>
+        <a href="https://url-shortner.reav.space/" target="_blank" rel="noreferrer">URL Shortener</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+
+    const search = document.getElementById("toolSearch");
+    const clearBtn = document.getElementById("clearSearch");
+    const grid = document.getElementById("toolGrid");
+    const cards = Array.from(grid.querySelectorAll(".tool-card"));
+    const empty = document.getElementById("noResults");
+
+    function applyFilter() {
+      const q = (search.value || "").trim().toLowerCase();
+      let visible = 0;
+
+      cards.forEach((card) => {
+        const text = (card.innerText + " " + (card.getAttribute("data-tags") || "")).toLowerCase();
+        const match = !q || text.includes(q);
+        card.style.display = match ? "" : "none";
+        if (match) visible++;
+      });
+
+      empty.classList.toggle("hidden", visible !== 0);
+    }
+
+    search.addEventListener("input", applyFilter);
+    clearBtn.addEventListener("click", () => {
+      search.value = "";
+      applyFilter();
+      search.focus();
+    });
+
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "/" && document.activeElement !== search) {
+        e.preventDefault();
+        search.focus();
+      }
+    });
+  </script>
 </body>
 </html>
