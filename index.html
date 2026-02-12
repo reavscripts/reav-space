@@ -16,25 +16,47 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#tools">Skip to tools</a>
+
   <header class="topbar">
     <div class="container topbar-inner">
       <a class="brand" href="#top" aria-label="reav.space home">
-        <span class="brand-dot"></span>
+        <span class="brand-dot" aria-hidden="true"></span>
         <span class="brand-text">reav.space</span>
+        <span class="brand-pill">Daily Tools</span>
       </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary navigation">
         <a class="nav-link" href="#tools">Tools</a>
+        <a class="nav-link" href="#trust">Trust</a>
         <a class="nav-link" href="#cta">Get started</a>
       </nav>
+
+      <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <div class="container mobile-nav-inner">
+        <a class="mobile-link" href="#tools">Tools</a>
+        <a class="mobile-link" href="#trust">Trust</a>
+        <a class="mobile-link" href="#cta">Get started</a>
+        <div class="mobile-nav-divider"></div>
+        <a class="mobile-link subtle" href="https://url-shortner.reav.space/" target="_blank" rel="noreferrer">Try URL shortener</a>
+      </div>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="badge">Free • Fast • Privacy‑friendly</p>
+        <div class="hero-copy reveal">
+          <p class="badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Free • Fast • Privacy-friendly
+          </p>
+
           <h1 class="hero-title">Your hub for modern, free daily tools.</h1>
           <p class="hero-subtitle">
             Clean utilities that solve everyday tasks in seconds — no clutter, no nonsense.
@@ -61,7 +83,7 @@
           </div>
         </div>
 
-        <div class="hero-panel" aria-label="Tool search">
+        <div class="hero-panel reveal" aria-label="Tool search">
           <div class="panel-header">
             <h2 class="panel-title">Find a tool</h2>
             <p class="panel-subtitle">Search by name or keyword.</p>
@@ -76,15 +98,28 @@
           <div class="panel-hint">
             Tip: Press <kbd>/</kbd> to focus search.
           </div>
+
+          <div class="panel-mini">
+            <div class="panel-mini-item">
+              <span class="mini-label">Popular</span>
+              <div class="mini-chips" aria-label="Popular tags">
+                <button class="mini-chip" type="button" data-q="pdf">PDF</button>
+                <button class="mini-chip" type="button" data-q="image">Image</button>
+                <button class="mini-chip" type="button" data-q="qr">QR</button>
+                <button class="mini-chip" type="button" data-q="convert">Convert</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-gridlines" aria-hidden="true"></div>
     </section>
 
     <section id="tools" class="section">
       <div class="container">
-        <div class="section-head">
+        <div class="section-head reveal">
           <h2 class="section-title">Explore our collection</h2>
           <p class="section-subtitle">
             Everything here is built to be simple, quick, and satisfying to use.
@@ -92,7 +127,7 @@
         </div>
 
         <div id="toolGrid" class="tool-grid">
-          <article class="tool-card" data-tags="recipe food generator meal">
+          <article class="tool-card reveal" data-tags="recipe food generator meal">
             <img src="/images/recipegenerator.png" alt="Recipe Generator" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>Recipe Generator</h3>
@@ -101,7 +136,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="url shortener link shorten">
+          <article class="tool-card reveal" data-tags="url shortener link shorten">
             <img src="/images/urlshortner.png" alt="URL Shortener" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>URL Shortener</h3>
@@ -110,7 +145,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="pdf image convert converter">
+          <article class="tool-card reveal" data-tags="pdf image convert converter">
             <img src="/images/pdftoimage.png" alt="PDF to Image Converter" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>PDF → Image</h3>
@@ -119,7 +154,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="resize compress image optimize">
+          <article class="tool-card reveal" data-tags="resize compress image optimize">
             <img src="/images/resizecompress.png" alt="Image Resizer & Compressor" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>Resize & Compress</h3>
@@ -128,7 +163,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="image convert jpg png webp">
+          <article class="tool-card reveal" data-tags="image convert jpg png webp">
             <img src="/images/imageconverter.png" alt="Image Converter" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>Image Converter</h3>
@@ -137,7 +172,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="markdown html convert preview">
+          <article class="tool-card reveal" data-tags="markdown html convert preview">
             <img src="/images/markdowntohtml.png" alt="Markdown to HTML Converter" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>Markdown → HTML</h3>
@@ -146,7 +181,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="qr code generator">
+          <article class="tool-card reveal" data-tags="qr code generator">
             <img src="/images/qrcodegenerator.png" alt="QR Code Generator" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>QR Code Generator</h3>
@@ -155,7 +190,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="color converter hex rgb hsl">
+          <article class="tool-card reveal" data-tags="color converter hex rgb hsl">
             <img src="/images/colorconverter.png" alt="Color Converter" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>Color Converter</h3>
@@ -164,7 +199,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="text case converter uppercase lowercase">
+          <article class="tool-card reveal" data-tags="text case converter uppercase lowercase">
             <img src="/images/textcaseconverter.png" alt="Text Case Converter" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>Text Case Converter</h3>
@@ -173,7 +208,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="sort deduplicate lines text">
+          <article class="tool-card reveal" data-tags="sort deduplicate lines text">
             <img src="/images/linesorterdeduplicator.png" alt="Line Sorter & Deduplicator" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>Sort & Deduplicate</h3>
@@ -182,7 +217,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="base64 encode decode">
+          <article class="tool-card reveal" data-tags="base64 encode decode">
             <img src="/images/base64.png" alt="Base64 Encoder & Decoder" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>Base64 Encode/Decode</h3>
@@ -191,7 +226,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="lorem ipsum generator placeholder">
+          <article class="tool-card reveal" data-tags="lorem ipsum generator placeholder">
             <img src="/images/loremipsumgenerator.png" alt="Lorem Ipsum Generator" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>Lorem Ipsum</h3>
@@ -200,7 +235,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="roi calculator finance">
+          <article class="tool-card reveal" data-tags="roi calculator finance">
             <img src="/images/roicalculator.png" alt="Advanced ROI Calculator" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>ROI Calculator</h3>
@@ -209,7 +244,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="password generator security">
+          <article class="tool-card reveal" data-tags="password generator security">
             <img src="/images/securepassword.png" alt="Secure Password Generator" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>Password Generator</h3>
@@ -218,7 +253,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="unit converter calculator">
+          <article class="tool-card reveal" data-tags="unit converter calculator">
             <img src="/images/unitconverter.png" alt="Universal Unit Converter" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>Unit Converter</h3>
@@ -227,7 +262,7 @@
             </div>
           </article>
 
-          <article class="tool-card" data-tags="name generator creative">
+          <article class="tool-card reveal" data-tags="name generator creative">
             <img src="/images/namesgenerator.png" alt="Name Generator" class="tool-icon" loading="lazy" />
             <div class="tool-body">
               <h3>Name Generator</h3>
@@ -237,14 +272,42 @@
           </article>
         </div>
 
-        <div id="noResults" class="no-results hidden">
+        <div id="noResults" class="no-results hidden" role="status" aria-live="polite">
           No tools match your search.
         </div>
       </div>
     </section>
 
+    <section id="trust" class="trust">
+      <div class="container">
+        <div class="trust-grid">
+          <div class="trust-copy reveal">
+            <h2 class="trust-title">Built for speed. Designed for clarity.</h2>
+            <p class="trust-subtitle">
+              A premium-feel experience comes from consistency: fast UI, clean spacing, and delightful micro-interactions.
+            </p>
+          </div>
+
+          <div class="trust-cards">
+            <article class="trust-card reveal">
+              <h3>Privacy-friendly</h3>
+              <p>Minimal tracking mindset. Simple tools that respect the user.</p>
+            </article>
+            <article class="trust-card reveal">
+              <h3>Instant utility</h3>
+              <p>Get in, do the job, get out. No clutter, no noise.</p>
+            </article>
+            <article class="trust-card reveal">
+              <h3>Modern UI</h3>
+              <p>Crisp type, consistent radii, and a premium dark aesthetic.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="cta" class="cta">
-      <div class="container cta-inner">
+      <div class="container cta-inner reveal">
         <div class="cta-copy">
           <h2 class="cta-title">Ready to simplify your workflow?</h2>
           <p class="cta-subtitle">Bookmark reav.space and come back whenever you need a quick utility.</p>
@@ -267,6 +330,7 @@
   <script>
     document.getElementById("current-year").textContent = new Date().getFullYear();
 
+    // Search filtering
     const search = document.getElementById("toolSearch");
     const clearBtn = document.getElementById("clearSearch");
     const grid = document.getElementById("toolGrid");
@@ -299,7 +363,69 @@
         e.preventDefault();
         search.focus();
       }
+      if (e.key === "Escape") {
+        closeMobileNav();
+      }
     });
+
+    // Popular quick chips
+    document.querySelectorAll(".mini-chip").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const q = btn.getAttribute("data-q") || "";
+        search.value = q;
+        applyFilter();
+        search.focus();
+      });
+    });
+
+    // Mobile nav
+    const navToggle = document.getElementById("navToggle");
+    const mobileNav = document.getElementById("mobileNav");
+
+    function openMobileNav() {
+      mobileNav.hidden = false;
+      requestAnimationFrame(() => mobileNav.classList.add("open"));
+      navToggle.setAttribute("aria-expanded", "true");
+      navToggle.setAttribute("aria-label", "Close menu");
+      document.body.classList.add("no-scroll");
+    }
+
+    function closeMobileNav() {
+      mobileNav.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.setAttribute("aria-label", "Open menu");
+      document.body.classList.remove("no-scroll");
+      setTimeout(() => {
+        if (!mobileNav.classList.contains("open")) mobileNav.hidden = true;
+      }, 180);
+    }
+
+    navToggle.addEventListener("click", () => {
+      const expanded = navToggle.getAttribute("aria-expanded") === "true";
+      expanded ? closeMobileNav() : openMobileNav();
+    });
+
+    mobileNav.addEventListener("click", (e) => {
+      const t = e.target;
+      if (t && t.matches && t.matches("a")) closeMobileNav();
+    });
+
+    // Reveal on scroll (reduced-motion aware)
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!prefersReduced) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting) {
+            en.target.classList.add("is-visible");
+            io.unobserve(en.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+    } else {
+      document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
+    }
   </script>
 </body>
 </html>
