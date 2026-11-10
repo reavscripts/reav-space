@@ -1,0 +1,23 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0v28" fill="none" stroke="#4b6274" stroke-opacity=".6"/></pattern></defs>
+  <path fill="#f7f6ef" d="M0 0h1200v630H0z"/>
+  <path fill="#152332" d="M720 0h480v630H720z"/>
+  <path fill="url(#grid)" d="M720 0h480v630H720z"/>
+  <path fill="#152332" d="M72 68h64v64H72z"/><path fill="#e0f475" d="M85 104h10v14H85zm14-9h10v23H99zm14-12h10v35h-10z"/>
+  <text x="154" y="112" font-family="Segoe UI, sans-serif" font-size="42" font-weight="750" fill="#17202c">reav.website</text>
+  <text x="72" y="223" font-family="Consolas, monospace" font-size="21" letter-spacing="2" fill="#536800">CATALOGO / LOGISTICA</text>
+  <g font-family="Segoe UI, sans-serif" font-size="74" font-weight="750" fill="#17202c" letter-spacing="-3">
+    <text x="70" y="311">Gestionali per il</text><text x="70" y="399">lavoro operativo.</text>
+  </g>
+  <path d="M72 469h574" stroke="#cbd0c8"/>
+  <text x="72" y="524" font-family="Segoe UI, sans-serif" font-size="30" fill="#4d5963">DoganaTools / LogiFlow</text>
+  <path d="M782 165h96l55 42v94l74 59h125" fill="none" stroke="#e0f475" stroke-width="4" stroke-dasharray="8 9"/>
+  <g stroke="#e0f475" stroke-width="3" fill="#152332"><circle cx="782" cy="165" r="13"/><circle cx="933" cy="302" r="9"/><circle cx="1132" cy="360" r="13"/></g>
+  <g fill="#1e3548" stroke="#bce2fd" stroke-width="2">
+    <rect x="1000" y="112" width="128" height="48"/><path d="M1024 121v30m25-30v30m25-30v30m25-30v30"/>
+    <rect x="974" y="173" width="128" height="48"/><path d="M998 182v30m25-30v30m25-30v30m25-30v30"/>
+    <rect x="1000" y="234" width="128" height="48"/><path d="M1024 243v30m25-30v30m25-30v30m25-30v30"/>
+  </g>
+  <text x="780" y="534" font-family="Consolas, monospace" font-size="22" letter-spacing="2" fill="#bce2fd">01 / LOGISTICA</text>
+</svg>

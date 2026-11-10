@@ -1,0 +1,43 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="310" viewBox="0 0 540 310">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0v24" fill="none" stroke="#385163" stroke-opacity=".43"/>
+    </pattern>
+    <pattern id="land" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M-2 6 6-2M2 10l8-8" stroke="#5c7080" stroke-opacity=".35"/>
+    </pattern>
+  </defs>
+  <path fill="#152332" d="M0 0h540v310H0z"/>
+  <path fill="url(#grid)" d="M0 0h540v310H0z"/>
+  <path d="M0 239h73l62-41h62l31-20h48v-48h53v-26h51V70h52V49h108v261H0Z" fill="#233747" stroke="#61788a"/>
+  <path d="M0 239h73l62-41h62l31-20h48v-48h53v-26h51V70h52V49h108v261H0Z" fill="url(#land)"/>
+  <g stroke="#82a0b2" fill="#1a2b3a" stroke-width="1.2">
+    <path d="M268 154h-61l-29 18-11 13h101ZM320 127h-63l-28 20h91ZM371 100h-59l-23 17h82Z"/>
+    <path d="M427 68h-60l-28 23h88Z"/>
+    <path d="M43 167h96l20-12-20-12H43l-15 12Z"/>
+    <path d="M49 155h12m12 0h12m12 0h12m12 0h12"/>
+  </g>
+  <path d="M95 108c34 0 55-17 86-17h62c37 0 48 14 48 39v77c0 15 11 25 29 25h103" fill="none" stroke="#dff575" stroke-width="2.4" stroke-dasharray="5 5"/>
+  <path d="M93 108h72c24 0 33-26 58-26h54" fill="none" stroke="#dff575" stroke-opacity=".35"/>
+  <path d="M343 232h52c15 0 20-15 34-15h72" fill="none" stroke="#bce2fd" stroke-width="2.2" stroke-dasharray="5 5"/>
+  <g fill="#152332" stroke="#dff575" stroke-width="2">
+    <circle cx="94" cy="108" r="10"/><circle cx="291" cy="165" r="6"/><circle cx="343" cy="232" r="9"/>
+  </g>
+  <g fill="#dff575"><circle cx="94" cy="108" r="3.2"/><circle cx="343" cy="232" r="3.2"/></g>
+  <g fill="#152332" stroke="#bce2fd" stroke-width="1.6">
+    <rect x="419" y="204" width="82" height="24"/><path d="M436 208v16m16-16v16m16-16v16m16-16v16"/>
+    <rect x="400" y="172" width="82" height="24"/><path d="M417 176v16m16-16v16m16-16v16m16-16v16"/>
+    <rect x="433" y="140" width="68" height="24"/><path d="M449 144v16m17-16v16m17-16v16"/>
+  </g>
+  <g font-family="Consolas, monospace" font-size="12" letter-spacing="1.1">
+    <text x="34" y="68" fill="#dff575">01 / CONTROLLI</text>
+    <text x="34" y="85" fill="#b3c6d2">CONTAINER E APPRODI</text>
+    <text x="306" y="267" fill="#bce2fd">02 / FASCICOLI</text>
+    <text x="306" y="284" fill="#b3c6d2">RITIRO E USCITE</text>
+  </g>
+  <g fill="none" stroke="#8097a7" stroke-width="1">
+    <path d="M25 22h16m-8-8v16M501 287h16m-8-8v16"/>
+    <circle cx="480" cy="94" r="15"/><path d="m480 85 5 14-5-3-5 3z"/>
+  </g>
+</svg>

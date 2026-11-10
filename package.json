@@ -1,16 +1,10 @@
 {
   "name": "reav-space",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Catalogo pubblico dei gestionali reav.website",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "node-fetch": "^2.7.0"
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/build.mjs && node scripts/check.mjs"
   }
 }
