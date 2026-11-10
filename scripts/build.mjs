@@ -127,11 +127,16 @@ function home() {
           <p class="lead">Dal controllo dei container alla gestione dei documenti e delle uscite. Scopri i gestionali web di reav.website, organizzati per settore.</p>
           <a class="action action-dark" href="#catalogo">Esplora il catalogo ${arrow}</a>
         </div>
-        <figure class="port-panel">
-          <figcaption><span>CARTA OPERATIVA</span><span>SETTORE ${first.number}</span></figcaption>
-          <img src="/assets/port-map.svg" width="540" height="310" alt="">
-          <a class="port-link" href="${categoryPath(first)}"><span><small>PRIMO SETTORE</small><strong>${clean(first.name)}</strong></span>${external}</a>
-        </figure>
+        <aside class="quick-access" aria-labelledby="quick-title">
+          <div class="quick-head"><p class="eyebrow">${clean(first.name)}</p><h2 id="quick-title">Accesso rapido</h2></div>
+          <ul role="list">${first.products.map(product => `
+            <li><a class="quick-link" href="${product.url}" aria-label="Apri ${clean(product.name)}">
+              ${productIcon(product)}
+              <span class="quick-copy"><strong>${clean(product.name)}</strong><span>${clean(product.access || product.label)}</span></span>
+              ${external}
+            </a></li>`).join("")}</ul>
+          <a class="quick-sector" href="${categoryPath(first)}">Scopri il settore ${clean(first.name)} ${arrow}</a>
+        </aside>
       </section>
       <section class="catalog shell" id="catalogo" aria-labelledby="catalog-title">
         <div class="section-cap"><p class="eyebrow"><span class="signal"></span> INDICE DEI SETTORI</p><span>${String(catalog.length).padStart(2,"0")} ${catalog.length === 1 ? "SETTORE" : "SETTORI"}</span></div>
@@ -161,7 +166,6 @@ function sectorPage(sector) {
       ${breadcrumbs(crumbs)}
       <header class="section-hero">
         <div><p class="eyebrow"><span class="signal"></span> SETTORE ${sector.number}</p><h1>${clean(sector.name)}<span>.</span></h1><p class="lead">${clean(sector.description)}</p></div>
-        <div class="section-figure" aria-hidden="true"><span>${sector.number}</span>${sector.illustration ? `<img src="${sector.illustration}" alt="" width="540" height="310">` : ""}</div>
       </header>
       <h2 class="section-title">${clean(sector.title)}</h2>
       ${productRows(sector)}

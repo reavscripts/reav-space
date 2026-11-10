@@ -12,12 +12,16 @@
   </g>
   <path d="M72 469h574" stroke="#cbd0c8"/>
   <text x="72" y="524" font-family="Segoe UI, sans-serif" font-size="30" fill="#4d5963">DoganaTools / LogiFlow</text>
-  <path d="M782 165h96l55 42v94l74 59h125" fill="none" stroke="#e0f475" stroke-width="4" stroke-dasharray="8 9"/>
-  <g stroke="#e0f475" stroke-width="3" fill="#152332"><circle cx="782" cy="165" r="13"/><circle cx="933" cy="302" r="9"/><circle cx="1132" cy="360" r="13"/></g>
-  <g fill="#1e3548" stroke="#bce2fd" stroke-width="2">
-    <rect x="1000" y="112" width="128" height="48"/><path d="M1024 121v30m25-30v30m25-30v30m25-30v30"/>
-    <rect x="974" y="173" width="128" height="48"/><path d="M998 182v30m25-30v30m25-30v30m25-30v30"/>
-    <rect x="1000" y="234" width="128" height="48"/><path d="M1024 243v30m25-30v30m25-30v30m25-30v30"/>
+  <text x="775" y="108" font-family="Consolas, monospace" font-size="23" letter-spacing="2" fill="#e0f475">ACCESSO RAPIDO</text>
+  <path d="M775 145h360m-360 154h360m-360 154h360" stroke="#688092"/>
+  <g font-family="Segoe UI, sans-serif" fill="#fff" font-size="36" font-weight="700">
+    <text x="775" y="206">DoganaTools</text>
+    <text x="775" y="360">LogiFlow</text>
   </g>
-  <text x="780" y="534" font-family="Consolas, monospace" font-size="22" letter-spacing="2" fill="#bce2fd">01 / LOGISTICA</text>
+  <g font-family="Segoe UI, sans-serif" fill="#d2dde5" font-size="25">
+    <text x="775" y="250">Container e approdi</text>
+    <text x="775" y="404">Documenti e uscite</text>
+  </g>
+  <path fill="#e0f475" d="M775 488h360v69H775z"/>
+  <text x="799" y="532" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700" fill="#17202c">Logistica</text>
 </svg>

@@ -9,7 +9,6 @@ export const catalog = [
     slug: "logistica",
     name: "Logistica",
     title: "Gestionali per la logistica portuale",
-    illustration: "/assets/port-map.svg",
     number: "01",
     description: "Gestionali per consultare container e approdi, organizzare i fascicoli e registrare le uscite dal porto.",
     products: [
@@ -20,6 +19,7 @@ export const catalog = [
         icon: "container",
         color: "lime",
         label: "Monitoraggio portuale",
+        access: "Controlla ingressi e chiusure doganali",
         subtitle: "Ricerca container e approdi",
         description: "Controlla gli ingressi dei container e consulta approdi e chiusure doganali di SCT, CONATECO e TFG con DoganaTools.",
         summary: "Consulta gli ingressi dei container e le chiusure doganali delle navi da un unico spazio di lavoro.",
@@ -39,6 +39,7 @@ export const catalog = [
         icon: "folder",
         color: "blue",
         label: "Documenti e uscite",
+        access: "Trova i documenti e registra le uscite",
         subtitle: "Fascicoli portuali e uscite container",
         description: "Organizza fascicoli portuali, PDF, cassette e bolle. Con LogiFlow i trasportatori consultano il ritiro e registrano le uscite dei container.",
         summary: "Collega documenti, cassette e uscite dei container, dalla preparazione del fascicolo al ritiro in porto.",
